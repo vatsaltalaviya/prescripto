@@ -1,8 +1,27 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>Prescripto - Healthcare Appointment Booking Application</h1>
+<h2>Overview</h2>
+<p>Prescripto is a modern web application built with <strong>React.js</strong> that allows users to browse, book, and manage appointments with trusted doctors. The platform provides an intuitive user interface to explore doctors by speciality, view top-rated doctors, and access account-related features such as profile management and appointment tracking. Designed with responsiveness in mind, Prescripto works seamlessly across desktop and mobile devices.</p>
+<h2>Features</h2>
+<ul> <li><strong>Doctor Browsing:</strong> Explore a curated list of trusted doctors by speciality or popularity.</li> <li><strong>Appointment Booking:</strong> Schedule appointments hassle-free with a simple booking system.</li> <li><strong>User Authentication:</strong> Create an account, log in, and manage your profile and appointments.</li> <li><strong>Responsive Design:</strong> Optimized for both desktop and mobile users with a mobile-friendly menu.</li> <li><strong>Speciality Filter:</strong> Find doctors based on their medical specialities.</li> <li><strong>Top Doctors:</strong> Highlighted section for top-rated or recommended doctors.</li> <li><strong>Trusted Experience:</strong> Connects users with over 100+ verified doctors.</li> </ul>
+<h2>Tech Stack</h2>
+<ul> <li><strong>Frontend:</strong> React.js</li> <li><strong>Routing:</strong> React Router DOM</li> <li><strong>State Management:</strong> React Context API (via <code>AppContext</code>)</li> <li><strong>Styling:</strong> Tailwind CSS (inferred from class names like <code>flex</code>, <code>bg-primary</code>, <code>md:mx-10</code>, etc.)</li> <li><strong>Assets:</strong> Images and icons stored in the <code>assets</code> folder</li> </ul>
+<h2>Project Structure</h2>
+<p>The project is composed of reusable React components organized as follows:</p>
+<h3>Core Components</h3>
+<ul> <li><strong><code>Navbar</code>:</strong> Navigation bar with links to Home, About Us, Doctors, and Contact. Includes a user dropdown for authenticated users and a mobile menu toggle.</li> <li><strong><code>Header</code>:</strong> Hero section promoting appointment booking with a call-to-action button.</li> <li><strong><code>Banner</code>:</strong> Promotional banner encouraging users to create an account and book appointments.</li> <li><strong><code>Footer</code>:</strong> Footer with company information, navigation links, and contact details.</li> </ul>
+<h3>Doctor-Related Components</h3>
+<ul> <li><strong><code>SpecialityMenu</code>:</strong> Displays a scrollable list of medical specialities with links to filter doctors.</li> <li><strong><code>TopDoctor</code>:</strong> Showcases the top 10 doctors with a "More" button to view all.</li> <li><strong><code>RelatedDoctor</code>:</strong> Lists doctors related to a specific speciality, excluding the currently viewed doctor.</li> </ul>
+<h3>Context</h3>
+<ul> <li><strong><code>AppContext</code>:</strong> Provides global state management for doctor data and currency symbol using React Context API.</li> </ul>
+<h2>Installation</h2>
+<ol> <li>Clone the repository: <pre><code>git clone &lt;repository-url&gt;</code></pre> </li> <li>Navigate to the project directory: <pre><code>cd prescripto</code></pre> </li> <li>Install dependencies: <pre><code>npm install</code></pre> </li> <li>Ensure the <code>assets</code> folder is correctly set up with required images and data (e.g., <code>logo</code>, <code>header_img</code>, <code>doctors</code> array).</li> <li>Run the development server: <pre><code>npm start</code></pre> </li> <li>Open your browser and visit <a href="http://localhost:3000">http://localhost:3000</a>.</li> </ol>
+<h2>Usage</h2>
+<ul> <li><strong>Home Page:</strong> Start by exploring the header and banner to book an appointment or create an account.</li> <li><strong>Doctors Page:</strong> Browse all doctors or filter by speciality using the <code>SpecialityMenu</code>.</li> <li><strong>Profile:</strong> Log in to access your profile and appointment history via the <code>Navbar</code> dropdown.</li> <li><strong>Responsive Navigation:</strong> On mobile, use the hamburger menu to access navigation links.</li> </ul>
+<h2>Dependencies</h2>
+<ul> <li><code>react</code>: Core library for building the UI.</li> <li><code>react-router-dom</code>: For client-side routing and navigation.</li> <li><code>tailwindcss</code>: Utility-first CSS framework (assumed based on class names).</li> </ul>
+<h2>Notes</h2>
+<ul> <li>The <code>doctors</code> data is imported from <code>../assets/assets</code> and is expected to be an array of objects with properties like <code>_id</code>, <code>name</code>, <code>speciality</code>, and <code>image</code>.</li> <li>The application assumes a backend exists for authentication and appointment management (e.g., <code>/login</code>, <code>/appoiment/:id</code> routes).</li> <li>Placeholder text (e.g., Lorem Ipsum in <code>Footer</code>) should be replaced with actual content.</li> </ul>
+<h2>Contributing</h2>
+<p>Feel free to submit issues or pull requests to enhance the project. Ensure any changes align with the project's goal of providing a seamless healthcare booking experience.</p>
+<h2>License</h2>
+<p>Copyright &copy; 2025 Prescripto. All rights reserved.</p>
