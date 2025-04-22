@@ -17,7 +17,7 @@ const Register = () => {
         <p>Please sign up to book appoiment.</p>
         <div className='w-full'>
           <p>Full name</p>
-          <input className='border-zinc-300 border rounded w-full p-2 mt-1' type='email' value={username} onChange={(e)=>setUsername(e.target.value)} required />
+          <input className='border-zinc-300 border rounded w-full p-2 mt-1' type='text' value={username} onChange={(e)=>setUsername(e.target.value)} required />
         </div>
         <div className='w-full'>
           <p>Email</p>
